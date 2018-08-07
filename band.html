@@ -7,24 +7,67 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="band.css">
     <title>Banjo site</title>
   </head>
   <body>
+
+
+<!-- Modal -->
+<div class="modal fade" id="secCallToAction" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Stay crispy</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Bacon ipsum dolor amet sirloin ham hock salami fatback beef meatloaf leberkas brisket porchetta turkey meatball spare ribs hamburger frankfurter. Sausage pork belly brisket turducken cupim frankfurter. Jowl corned beef sausage shank, bacon porchetta bresaola pork loin filet mignon pork chop beef strip steak. Strip steak biltong shank beef ribs leberkas bacon doner pork belly. Biltong rump cupim sirloin meatball tail swine pancetta jerky bacon turkey.
+      </div>
+      <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="mainCallToAction" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Stay funky</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam vitae, maxime dolorum modi sunt incidunt repudiandae maiores officia, ex. Non autem similique iure quas saepe inventore accusamus eveniet. Quam, earum.
+      </div>
+      <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>    
+    
+     
+     
       <header>
           <div class="collapse bg-dark" id="navbarHeader">
             <div class="container">
               <div class="row">
                 <div class="col-sm-8 col-md-7 py-4">
-                  <h4 class="text-white">Mason &amp; Daughters</h4>
-                  <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+                  <h4 class="text-white">Latino music!</h4>
+                  <p class="text-muted">Welcome to the landing page of the futute best latino funky band ever! Enjoy the groove mixture of tradional and funky latino music. Find us on Spotify as well.</p>
                 </div>
                 <div class="col-sm-4 offset-md-1 py-4">
                   <h4 class="text-white">Contact</h4>
                   <ul class="list-unstyled">
-                    <li><a href="#" class="text-white">Follow on Twitter</a></li>
-                    <li><a href="#" class="text-white">Like on Facebook</a></li>
-                    <li><a href="#" class="text-white">Email me</a></li>
+                    <li><a href="#" class="text-muted">Follow on Twitter</a></li>
+                    <li><a href="#" class="text-muted">Like on Facebook</a></li>
+                    <li><a href="#" class="text-muted">Email me</a></li>
                   </ul>
                 </div>
               </div>
@@ -33,7 +76,6 @@
           <div class="navbar navbar-dark bg-dark shadow-sm">
             <div class="container d-flex justify-content-between">
               <a href="#" class="navbar-brand d-flex align-items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
                 <strong>Mason &amp; Daughters</strong>
               </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,10 +90,10 @@
       <section class="jumbotron text-center">
         <div class="container">
           <h1 class="jumbotron-heading">Mason &amp; Daughters</h1>
-          <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+          <p class="lead text-white">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
           <p>
-            <a href="#" class="btn btn-primary my-2">Main call to action</a>
-            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+            <a href="#" class="btn btn-primary my-2" data-toggle="modal" data-target="#mainCallToAction">Main call to action</a>
+            <a href="#" class="btn btn-secondary my-2" data-toggle="modal" data-target="#secCallToAction">Secondary action</a>
           </p>
         </div>
       </section>
@@ -103,11 +145,11 @@
                     <small class="text-muted">9 mins</small>
                   </div>
                 </div>
-            </div>
+              </div>
             </div>
           </div>
        </div>
-
+    </div>
 
     </main>
 
